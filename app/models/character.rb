@@ -7,7 +7,9 @@ class Character < ActiveRecord::Base
   end
   
   # def build_network
-    
+    c = self.new(:name => "?")
+    c.show.build_network(:name => "?")
+    c.save
   # end
   
 end
